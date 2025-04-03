@@ -3,6 +3,7 @@
   --color-bouton: hsl(158, 42%, 18%);
   --color-right: hsl(30, 38%, 92%);
   --color-categor: hsl(158, 36%, 37%);
+  --color-h1: hsl(212, 21%, 14%);
 }
 * {
   padding: 0;
@@ -53,11 +54,16 @@ main {
 }
 h1 {
   font-size: 35px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--color-h1);
 }
 .description {
   width: 85%;
   line-height: 1.5;
   font-size: 14px;
+  color: var(--color-categor);
+  font-weight: 500;
 }
 .price {
   display: flex;
@@ -67,10 +73,12 @@ h1 {
 }
 .price1 {
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--color-bouton);
 }
 .price2 {
   text-decoration: line-through;
+  color: var(--color-categor);
 }
 button {
   width: 100%;
@@ -81,7 +89,7 @@ button {
   border-radius: 10px;
   border: none;
   background-color: var(--color-bouton);
-  color: white;
+  color: var(--color-background);
   gap: 10px;
   cursor: pointer;
   font-weight: 700;
